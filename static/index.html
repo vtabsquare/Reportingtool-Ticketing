@@ -49,11 +49,11 @@
         <div class="form-layout">
           <form id="ticket-form" class="panel form-card">
             <div class="panel-head"><div><span class="eyebrow">NEW SUPPORT REQUEST</span><h3>Tell us what happened</h3><p>Detailed reproduction information helps engineering resolve the issue faster.</p></div></div>
-            <label>Issue title<input name="title" required minlength="4" placeholder="Briefly describe the problem"/></label>
+            <label>Issue title *<input name="title" required minlength="4" placeholder="Briefly describe the problem"/></label>
             <div class="form-row"><label>Source application<select name="source" id="ticket-source"><option value="services">Reporting Services</option><option value="admin-console">Admin Console</option><option value="exe">Desktop App (EXE)</option></select></label><label>Category<select name="category"><option value="bug">Bug</option><option value="crash">Crash</option><option value="ui">UI glitch</option><option value="performance">Performance</option><option value="feature">Feature request</option></select></label><label>Impact<select name="severity"><option value="medium">Medium</option><option value="critical">Critical / blocker</option><option value="high">High / major</option><option value="low">Low / cosmetic</option></select></label></div>
-            <label>Description<textarea name="description" required minlength="10" rows="6" placeholder="What did you expect, and what happened instead?"></textarea></label>
-            <label>Steps to reproduce<textarea name="steps_to_reproduce" rows="5" placeholder="1. Open...&#10;2. Select...&#10;3. Observe..."></textarea></label>
-            <div class="dropzone"><input id="attachments" type="file" multiple accept="image/*,video/mp4,image/gif,.txt,.log,.json"/><strong>Drop screenshots, recordings, or logs here</strong><small id="attachments-hint">Maximum size is controlled by the server policy.</small></div>
+            <label>Description *<textarea name="description" required minlength="10" rows="6" placeholder="What did you expect, and what happened instead?"></textarea></label>
+            <label>Steps to reproduce (Optional)<textarea name="steps_to_reproduce" rows="5" placeholder="1. Open...&#10;2. Select...&#10;3. Observe... (Optional)"></textarea></label>
+            <div class="dropzone"><input id="attachments" type="file" multiple accept="image/*,video/mp4,image/gif,.txt,.log,.json"/><strong>Drop screenshots, recordings, or logs here (Optional)</strong><small id="attachments-hint">Maximum size is controlled by the server policy.</small></div>
             <input type="hidden" name="diagnostic_token" id="diagnostic-token"/>
             <div class="form-actions"><button type="reset" class="secondary">Clear</button><button type="submit" class="primary" id="submit-ticket">Submit ticket</button></div>
           </form>
